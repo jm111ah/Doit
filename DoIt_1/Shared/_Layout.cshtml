@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fulid">
+            <div class="navbar-header">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Do it!</a>
+            </div>
+            <ul class="nav navbar-nav">
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                    @*<li><a asp-controller="Home" asp-action="Register">회원가입</a></li>*@
+                    @*<li><a asp-controller="Account" asp-action="Login">로그인</a></li>*@
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fulid">
+        @RenderBody()
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fulid">
+            <span class="navbar-text">
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
